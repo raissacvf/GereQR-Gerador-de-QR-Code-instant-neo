@@ -108,3 +108,11 @@ button:hover {
 .fade {
     animation: fadeIn 0.4s ease-in-out;
 }
+.creditos {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 14px;
+  color: #b9a7ff; /* roxo claro */
+  font-weight: 500;
+}

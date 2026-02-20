@@ -119,12 +119,11 @@ button:hover {
     animation: fadeIn 0.4s ease-in-out;
 }
 .creditos {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
+  margin-top: 20px;
   font-size: 14px;
   color: #b9a7ff;
   font-weight: 500;
+  text-align: center;
 }
 
 /* Centraliza no mobile */

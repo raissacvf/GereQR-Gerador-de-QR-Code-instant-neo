@@ -10,18 +10,32 @@
 
     <div class="container">
         <h1>Gere<span>QR</span></h1>
-        <p class="subtitle">Transforme qualquer texto ou link em QR Code - Simples, rápido e fácil !</p>
+        <p class="subtitle">
+            Transforme qualquer texto ou link em QR Code — Simples, rápido e fácil!
+        </p>
 
-        <input type="text" id="qr-input" placeholder="Insira o texto ou link aqui..." />
-        
-       <button id="generate-btn">Gerar QR Code</button>
+        <input 
+            type="text" 
+            id="qr-input" 
+            placeholder="Insira o texto ou link aqui..."
+            autocomplete="off"
+        />
 
+        <button id="generate-btn">
+            Gerar QR Code
+        </button>
+
+        <!-- Área onde o QR será exibido -->
         <div id="qr-result" class="qr-box"></div>
     </div>
 
+    <!-- Script sempre no final do body -->
     <script src="script.js"></script>
+
+    <!-- Créditos -->
     <footer class="creditos">
-  Desenvolvido por Raissa Castro © 2026 Front-end Developer
-</footer>
+        Desenvolvido por Raissa Castro © 2026 • Front-end Developer
+    </footer>
+
 </body>
 </html>

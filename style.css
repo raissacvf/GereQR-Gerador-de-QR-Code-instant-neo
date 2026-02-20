@@ -9,10 +9,10 @@ body {
     min-height: 100vh;
     background: linear-gradient(135deg, #1E1B2E, #2D1E4F);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #F8F8FF;
-    overflow-x: hidden;
 }
 
 .container {
@@ -119,7 +119,7 @@ button:hover {
     animation: fadeIn 0.4s ease-in-out;
 }
 .creditos {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 14px;
   color: #b9a7ff;
   font-weight: 500;
@@ -129,8 +129,6 @@ button:hover {
 /* Centraliza no mobile */
 @media (max-width: 480px) {
   .creditos {
-    right: 50%;
-    transform: translateX(50%);
     text-align: center;
     font-size: 12px;
   }

@@ -6,12 +6,13 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #1E1B2E, #2D1E4F);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #F8F8FF;
+    overflow-x: hidden;
 }
 
 .container {
@@ -49,6 +50,9 @@ input {
     margin-bottom: 15px;
     font-size: 14px;
 }
+input:focus {
+  box-shadow: 0 0 0 2px #A29BFE;
+}
 
 button {
     width: 100%;
@@ -75,11 +79,17 @@ button:hover {
     align-items: center;
 }
 
-.qr-box img {
+    .qr-box img {
     animation: scaleUp 0.4s ease-in-out;
     border-radius: 12px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
-
+#qrcode img {
+  max-width: 100%;
+  height: auto;
+}
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px);}
     to { opacity: 1; transform: translateY(0);}
@@ -113,6 +123,28 @@ button:hover {
   bottom: 20px;
   right: 30px;
   font-size: 14px;
-  color: #b9a7ff; /* roxo claro */
+  color: #b9a7ff;
   font-weight: 500;
+}
+
+/* Centraliza no mobile */
+@media (max-width: 480px) {
+  .creditos {
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+   }
+button:active {
+  transform: scale(0.98);
 }
